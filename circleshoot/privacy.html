@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Circle Shoot — プライバシーポリシー・利用規約</title>
+<meta name="description" content="Circle Shoot のプライバシーポリシーおよび利用規約">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#05060e;color:#eafcff;font-family:'Noto Sans JP',system-ui,sans-serif;padding:0 24px 96px}
+  a{color:#35f0ff;text-decoration:none}
+  a:hover{color:#7ae7ff;text-decoration:underline}
+  .wrap{max-width:760px;margin:0 auto;display:flex;flex-direction:column}
+  .head{padding:48px 0 26px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid rgba(255,255,255,.12)}
+  .mark{position:relative;width:38px;height:38px;flex:none;border-radius:50%;border:5px solid #35f0ff;box-shadow:0 0 18px rgba(53,240,255,.45);clip-path:polygon(0 0,100% 0,100% 34%,50% 34%,50% 66%,100% 66%,100% 100%,0 100%)}
+  .pill{padding:7px 15px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:transparent;color:rgba(255,255,255,.45);font-size:11px;letter-spacing:.1em;cursor:pointer;font-family:inherit}
+  .pill.on{border-color:rgba(53,240,255,.6);background:rgba(53,240,255,.1);color:#35f0ff}
+  .tab{padding:9px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:transparent;color:rgba(255,255,255,.45);font-size:11.5px;font-weight:700;letter-spacing:.1em;cursor:pointer;font-family:inherit}
+  .tab.on{border-color:rgba(255,94,200,.6);background:rgba(255,94,200,.12);color:#ff5ec8}
+  h1{font-size:24px;font-weight:700;letter-spacing:.04em;margin:0}
+  .date{font-size:11px;letter-spacing:.1em;color:rgba(255,255,255,.4)}
+  h2{font-size:13.5px;font-weight:700;color:#7ad7ff;letter-spacing:.04em;margin:0}
+  p{font-size:13.5px;line-height:2.05;color:rgba(255,255,255,.78);text-wrap:pretty;margin:0}
+  .foot{margin-top:56px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:11px;line-height:1.9;color:rgba(255,255,255,.35)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head">
+    <div style="display:flex;align-items:center;gap:14px">
+      <span class="mark"></span>
+      <span style="display:flex;flex-direction:column;gap:2px">
+        <span style="font-family:'Chakra Petch',sans-serif;font-size:17px;font-weight:700;letter-spacing:.14em">CIRCLE SHOOT</span>
+        <span id="subtitle" style="font-size:10.5px;letter-spacing:.16em;color:rgba(255,255,255,.4)"></span>
+      </span>
+    </div>
+    <div style="display:flex;gap:8px">
+      <button class="pill" id="bja">日本語</button>
+      <button class="pill" id="ben">English</button>
+    </div>
+  </div>
+  <div style="display:flex;gap:10px;padding:22px 0 6px">
+    <button class="tab" id="bpriv"></button>
+    <button class="tab" id="bterms"></button>
+  </div>
+  <div style="padding:30px 0 0;display:flex;flex-direction:column;gap:8px">
+    <h1 id="title"></h1>
+    <div class="date" id="date"></div>
+  </div>
+  <div id="secs" style="padding-top:34px;display:flex;flex-direction:column;gap:30px"></div>
+  <div class="foot" id="footer"></div>
+</div>
+<script>
+const D = {
+      ja: {
+        privacy: { title: 'プライバシーポリシー', date: '制定日：2026 年 8 月 1 日 ／ 最終更新日：2026 年 8 月 4 日', secs: [
+          { h: '1. アプリ名・運営者', p: '本ポリシーは、アプリ「Circle Shoot」（以下「本アプリ」）における個人情報の取り扱いについて定めるものです。運営者：Ramune＆Penguin。' },
+          { h: '2. 収集する情報', p: '本アプリは、利用者の個人情報を一切収集しません。氏名・住所・電話番号・メールアドレスを取得することはなく、アカウント登録も必要ありません。広告配信や利用状況の解析を行う外部サービスは組み込まれていないため、広告識別子（IDFA／AAID）や端末情報が外部へ送信されることもありません。' },
+          { h: '3. 端末内に保存されるデータ', p: 'ハイスコア、到達 PASS、所持ダイヤ、選択中のスキン、言語設定などのゲームデータは、端末内の保存領域にのみ記録されます。これらは外部のサーバーへ送信されず、運営者が閲覧することはできません。アプリを削除すると、これらのデータもあわせて削除されます。' },
+          { h: '4. 通信・第三者提供', p: '本アプリはゲームの動作に必要なデータをすべてアプリ内に同梱しており、通常の利用においてインターネット通信を行いません。したがって、利用者の情報を第三者へ提供・販売することはありません。' },
+          { h: '5. 子どもの利用について', p: '本アプリは、そもそも個人情報を収集しない設計です。年齢を問わず安心してご利用いただけますが、保護者の方でご不明な点がある場合は下記までご連絡ください。' },
+          { h: '6. お問い合わせ', p: 'caimnier.games@gmail.com。内容を確認のうえ、順次ご返信します。' },
+          { h: '7. 本ポリシーの改定', p: '今後のアップデートで広告配信・利用状況の解析・アプリ内課金を導入する場合は、導入に先立って本ポリシーを改定し、アプリ内および本ページでお知らせします。' }
+        ] },
+        terms: { title: '利用規約', date: '制定日：2026 年 8 月 1 日 ／ 最終更新日：2026 年 8 月 4 日', secs: [
+          { h: '1. 本規約について', p: '本規約は、アプリ「Circle Shoot」（以下「本アプリ」）の利用条件を定めるものです。本アプリをダウンロードまたは利用した時点で、本規約に同意したものとみなします。同意いただけない場合は本アプリをご利用にならないでください。' },
+          { h: '2. 利用できる条件', p: '本アプリは、対応する端末と OS をお持ちの方であれば無料で利用できます。現在、アプリ内課金および広告表示はありません。未成年の方は保護者の同意を得たうえでご利用ください。' },
+          { h: '3. 禁止事項', p: 'セーブデータやアプリの改ざん、解析、リバースエンジニアリング、エミュレータや外部ツールによる不正な操作、複製・再配布、スコアの不正な操作、他の利用者や第三者の権利を害する行為を禁止します。違反が確認された場合、予告なく利用を制限し、または記録を無効とすることがあります。' },
+          { h: '4. 不具合とメンテナンス', p: '本アプリに不具合が生じた場合、運営者は可能な範囲で修正に努めますが、すべての不具合の解消や特定期限での対応をお約束するものではありません。更新のため、一時的に一部機能を利用できなくすることがあります。' },
+          { h: '5. 内容の変更・提供の終了', p: '運営者は、事前の通知なくゲームバランス、アイテム内容、機能の追加・削除を行うことがあります。また、やむを得ない事情により本アプリの提供を終了する場合があります。' },
+          { h: '6. スコア・セーブデータの消失', p: 'ゲームデータは端末内にのみ保存されます。アプリの削除、端末の初期化・故障・機種変更、OS のストレージ管理による削除などにより、ハイスコアや所持ダイヤが失われる場合があります。運営者はデータの復旧を行いません。' },
+          { h: '7. 権利の帰属', p: '本アプリのプログラム、画面デザイン、画像、効果音、音楽、テキストその他一切のコンテンツに関する著作権およびその他の権利は、運営者または正当な権利者に帰属します。私的な利用の範囲を超えた複製、配布、改変、商用利用を禁止します。実況・配信・スクリーンショットの投稿は、収益化の有無を問わず自由に行っていただけますが、本アプリを誤解させる形での利用はご遠慮ください。' },
+          { h: '8. 免責事項', p: '本アプリは現状有姿で提供され、特定目的への適合性や無中断・無誤りの動作を保証するものではありません。本アプリの利用または利用不能から生じた損害、データの消失、端末の不具合について、運営者は法令で認められる範囲において責任を負いません。' },
+          { h: '9. 本規約の変更', p: '運営者は必要に応じて本規約を変更することがあります。重要な変更がある場合はアプリ内および本ページでお知らせします。変更後に本アプリを継続して利用された場合、変更後の規約に同意したものとみなします。' },
+          { h: '10. お問い合わせ', p: 'caimnier.games@gmail.com' }
+        ] }
+      },
+      en: {
+        privacy: { title: 'Privacy Policy', date: 'Effective: 1 August 2026 / Last updated: 4 August 2026', secs: [
+          { h: '1. App and operator', p: 'This policy describes how personal data is handled in the app "Circle Shoot". Operator: Ramune&Penguin.' },
+          { h: '2. Information we collect', p: 'The app collects no personal information whatsoever. We do not obtain your name, address, phone number or e-mail, and no account is required. No advertising or analytics service is embedded, so no advertising identifier (IDFA/AAID) or device information is transmitted anywhere.' },
+          { h: '3. Data stored on your device', p: 'High scores, best PASS, diamonds, selected skins and language preference are written only to storage on your own device. They are never sent to any server and cannot be viewed by the operator. Deleting the app deletes this data with it.' },
+          { h: '4. Network use and third parties', p: 'Everything the game needs is bundled inside the app, and normal play involves no internet communication. Accordingly, we never provide or sell user information to third parties.' },
+          { h: '5. Children', p: 'The app is designed so that no personal information is collected at all, so it can be used safely at any age. Guardians with questions are welcome to contact us below.' },
+          { h: '6. Contact', p: 'caimnier.games@gmail.com — we reply as soon as we can.' },
+          { h: '7. Revisions', p: 'Should a future update introduce advertising, analytics or in-app purchases, this policy will be revised beforehand and the change announced in the app and on this page.' }
+        ] },
+        terms: { title: 'Terms of Use', date: 'Effective: 1 August 2026 / Last updated: 4 August 2026', secs: [
+          { h: '1. About these terms', p: 'These terms govern use of the app "Circle Shoot". By downloading or using the app you agree to them. If you do not agree, please do not use the app.' },
+          { h: '2. Eligibility', p: 'The app is free to use on any supported device and OS. There are currently no in-app purchases and no advertising. Minors should obtain a guardian’s consent.' },
+          { h: '3. Prohibited conduct', p: 'You may not tamper with or analyse save data or the app, reverse engineer it, use emulators or external tools to manipulate play, copy or redistribute it, falsify scores, or infringe the rights of others. Violations may result in restricted access or invalidated records without notice.' },
+          { h: '4. Faults and maintenance', p: 'We will make reasonable efforts to fix defects but do not guarantee that every issue will be resolved or fixed within a set time. Features may be temporarily unavailable during updates.' },
+          { h: '5. Changes and discontinuation', p: 'We may change game balance, item contents and features, or add and remove functionality, without prior notice, and may discontinue the app if circumstances require.' },
+          { h: '6. Loss of scores and save data', p: 'Game data is stored only on your device. Deleting the app, resetting, damaging or replacing your device, or OS storage management may erase high scores and diamonds. We cannot recover lost data.' },
+          { h: '7. Intellectual property', p: 'All rights in the program, screen design, images, sound effects, music and text belong to the operator or the respective rights holders. Reproduction, distribution, modification or commercial use beyond personal use is prohibited. Streaming, videos and screenshots are welcome, monetised or not, provided they do not misrepresent the app.' },
+          { h: '8. Disclaimer', p: 'The app is provided as is, without warranty of fitness for a particular purpose or of uninterrupted, error-free operation. To the extent permitted by law we are not liable for damage, data loss or device faults arising from use or inability to use the app.' },
+          { h: '9. Changes to these terms', p: 'We may revise these terms; significant changes will be announced in the app and on this page. Continued use after a revision means you accept it.' },
+          { h: '10. Contact', p: 'caimnier.games@gmail.com' }
+        ] }
+      }
+    };
+var lang='ja', doc='privacy';
+var h=(location.hash||'').toLowerCase();
+if(h.indexOf('terms')>=0)doc='terms';
+if(h.indexOf('en')>=0)lang='en';
+else if(h.indexOf('ja')<0&&(navigator.language||'').indexOf('ja')!==0)lang='en';
+function g(id){return document.getElementById(id)}
+function render(){
+  var ja=lang==='ja', d=D[lang][doc];
+  document.documentElement.lang=ja?'ja':'en';
+  g('subtitle').textContent=ja?'法的事項':'Legal';
+  g('bpriv').textContent=ja?'プライバシーポリシー':'Privacy Policy';
+  g('bterms').textContent=ja?'利用規約':'Terms of Use';
+  g('title').textContent=d.title;
+  g('date').textContent=d.date;
+  g('footer').textContent=ja?'© 2026 Ramune＆Penguin　本ページは Circle Shoot の法的事項をまとめたものです。':'© 2026 Ramune&Penguin. Legal information for Circle Shoot.';
+  document.title='Circle Shoot — '+d.title;
+  g('bja').className='pill'+(ja?' on':'');
+  g('ben').className='pill'+(ja?'':' on');
+  g('bpriv').className='tab'+(doc==='privacy'?' on':'');
+  g('bterms').className='tab'+(doc==='terms'?' on':'');
+  var box=g('secs'); box.innerHTML='';
+  d.secs.forEach(function(s){
+    var w=document.createElement('div');
+    w.style.cssText='display:flex;flex-direction:column;gap:9px';
+    var hh=document.createElement('h2'); hh.textContent=s.h;
+    var pp=document.createElement('p'); pp.textContent=s.p;
+    w.appendChild(hh); w.appendChild(pp); box.appendChild(w);
+  });
+}
+g('bja').onclick=function(){lang='ja';render()};
+g('ben').onclick=function(){lang='en';render()};
+g('bpriv').onclick=function(){doc='privacy';render()};
+g('bterms').onclick=function(){doc='terms';render()};
+render();
+</script>
+</body>
+</html>
