@@ -57,7 +57,7 @@
 const D = {
       ja: {
         privacy: { title: 'プライバシーポリシー', date: '制定日：2026 年 8 月 1 日 ／ 最終更新日：2026 年 8 月 4 日', secs: [
-          { h: '1. アプリ名・運営者', p: '本ポリシーは、アプリ「Circle Shoot」（以下「本アプリ」）における個人情報の取り扱いについて定めるものです。運営者：Ramune＆Penguin。' },
+          { h: '1. アプリ名・運営者', p: '本ポリシーは、アプリ「Circle Shoot」（以下「本アプリ」）における個人情報の取り扱いについて定めるものです。運営者：Ramune&Penguin。' },
           { h: '2. 収集する情報', p: '本アプリは、利用者の個人情報を一切収集しません。氏名・住所・電話番号・メールアドレスを取得することはなく、アカウント登録も必要ありません。広告配信や利用状況の解析を行う外部サービスは組み込まれていないため、広告識別子（IDFA／AAID）や端末情報が外部へ送信されることもありません。' },
           { h: '3. 端末内に保存されるデータ', p: 'ハイスコア、到達 PASS、所持ダイヤ、選択中のスキン、言語設定などのゲームデータは、端末内の保存領域にのみ記録されます。これらは外部のサーバーへ送信されず、運営者が閲覧することはできません。アプリを削除すると、これらのデータもあわせて削除されます。' },
           { h: '4. 通信・第三者提供', p: '本アプリはゲームの動作に必要なデータをすべてアプリ内に同梱しており、通常の利用においてインターネット通信を行いません。したがって、利用者の情報を第三者へ提供・販売することはありません。' },
@@ -116,7 +116,7 @@ function render(){
   g('bterms').textContent=ja?'利用規約':'Terms of Use';
   g('title').textContent=d.title;
   g('date').textContent=d.date;
-  g('footer').textContent=ja?'© 2026 Ramune＆Penguin　本ページは Circle Shoot の法的事項をまとめたものです。':'© 2026 Ramune&Penguin. Legal information for Circle Shoot.';
+  g('footer').textContent=ja?'© 2026 Ramune&Penguin　本ページは Circle Shoot の法的事項をまとめたものです。':'© 2026 Ramune&Penguin. Legal information for Circle Shoot.';
   document.title='Circle Shoot — '+d.title;
   g('bja').className='pill'+(ja?' on':'');
   g('ben').className='pill'+(ja?'':' on');
